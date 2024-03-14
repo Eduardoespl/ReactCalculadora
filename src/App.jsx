@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './index.css'
 
 function App() {
   const [num1, setNum1] = useState(0);
@@ -31,16 +32,18 @@ function App() {
 
   return (
     <>
-      <h1>Calculadora</h1>
-      <input type="number" placeholder="numero 1" value={num1} onChange={handleChange1}/>
-      <input type="number" placeholder="numero 2" value={num2} onChange={handleChange2}/>
-      <hr/>
-      <button onClick={handleSumar}>+</button>
-      <button onClick={handleRestar}>-</button>
-      <button onClick={handleMultiplicar}>x</button>
-      <button onClick={handleDividir}>/</button>
-      <hr/>
-      <p>Resultado: {resultado}</p>
+      <body>
+        <h1>Calculadora</h1>
+        <input type="number" placeholder="numero 1" value={num1} onChange={handleChange1}/>
+        <input type="number" placeholder="numero 2" value={num2} onChange={handleChange2}/>
+        <div className="botones">
+          <button onClick={handleSumar}>+</button>
+          <button onClick={handleRestar}>-</button>
+          <button onClick={handleMultiplicar}>x</button>
+          <button onClick={handleDividir}>/</button>
+        </div>
+        <p>Resultado: {resultado}</p>
+      </body>
     </>
   )
 }

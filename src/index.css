@@ -1,0 +1,49 @@
+h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+
+body{
+    background-color: #4d064e;
+    font-family: 'Arial';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
